@@ -73,7 +73,7 @@ class CourseState extends State<VoongCourseApp> {
                     final video = this.videos[i];
              return FlatButton(onPressed: (){
                Navigator.push(context,
-                   MaterialPageRoute(builder: (context) => DetailPage(video["name"])));
+                   MaterialPageRoute(builder: (context) => DetailPage(video)));
                     },
                  padding: EdgeInsets.all(0),
                  child: VideoCell(video));

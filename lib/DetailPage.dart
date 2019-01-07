@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
+
+
 class DetailPage extends StatelessWidget{
 
-  final courseName;
-  DetailPage(this.courseName);
+  final video;
+  DetailPage(this.video);
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text(courseName),
+        title: Text(video["name"]),
       ),
       body: Center(
-        child: Text("Detail in center"),
+        child: Text(video["link"]
+        ),
       ),
     );
   }
